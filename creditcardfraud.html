@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Credit Card Fraud Detector</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Inter', sans-serif; }
+    body { background: #0f0f2d; color: #fff; display: flex; justify-content: center; align-items: center; min-height: 100vh; padding: 20px; }
+    .container { display: flex; justify-content: space-between; align-items: center; max-width: 1200px; width: 100%; flex-wrap: wrap; gap: 40px; }
+    .content { max-width: 600px; }
+    .logo { font-weight: 700; font-size: 28px; margin-bottom: 30px; }
+    h1 { font-size: 48px; line-height: 1.2; margin-bottom: 20px; }
+    h1 span { color: #7b5fff; }
+    p { font-size: 16px; line-height: 1.5; margin-bottom: 30px; color: #cfd3e3; }
+    .btn { display: inline-block; padding: 12px 30px; border: 2px solid #7b5fff; color: #7b5fff; text-decoration: none; border-radius: 8px; font-weight: 600; transition: all 0.3s ease; }
+    .btn:hover { background: #7b5fff; color: #fff; }
+
+    /* Credit Card Styles */
+    .cards { display: flex; flex-direction: column; gap: 40px; }
+    .card { background: linear-gradient(135deg, #7b5fff, #4b39c8); border-radius: 20px; padding: 30px; width: 320px; position: relative; color: #fff; box-shadow: 0 20px 40px rgba(123, 95, 255, 0.4); }
+    .balance { font-size: 20px; font-weight: 700; margin-bottom: 15px; }
+    .card-number { letter-spacing: 2px; font-size: 16px; margin-bottom: 20px; }
+    .card-info { display: flex; justify-content: space-between; font-size: 14px; margin-bottom: 10px; }
+    .small-card { width: 140px; position: absolute; top: -40px; right: -20px; padding: 15px; border-radius: 15px; box-shadow: 0 15px 30px rgba(123, 95, 255, 0.4); background: linear-gradient(135deg, #7b5fff, #4b39c8); text-align: center; font-size: 12px; }
+    .logo-img { position: absolute; top: 20px; right: 20px; width: 50px; }
+
+
+.cards { display: flex; flex-direction: column; gap: 20px; }
+.card {
+  background: linear-gradient(135deg, #7b5fff, #4b39c8);
+  border-radius: 20px;
+  padding: 30px;
+  width: 320px;
+  position: relative;
+  color: #fff;
+  box-shadow: 0 20px 40px rgba(123, 95, 255, 0.4);
+  font-family: 'Inter', sans-serif;
+}
+.balance { font-size: 24px; font-weight: 700; margin-bottom: 20px; }
+.card-number { letter-spacing: 2px; font-size: 16px; margin-bottom: 20px; }
+.card-info { display: flex; justify-content: space-between; font-size: 14px; margin-bottom: 10px; }
+.small-card {
+  width: 140px;
+  position: absolute;
+  top: -40px;
+  right: -20px;
+  padding: 15px;
+  border-radius: 15px;
+  box-shadow: 0 15px 30px rgba(123, 95, 255, 0.4);
+  background: linear-gradient(135deg, #7b5fff, #4b39c8);
+  text-align: center;
+  font-size: 12px;
+}
+.logo-img {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 50px;
+}
+</style>
+</head>
+<body>
+  <div class="container">
+    <!-- Left content -->
+    <div class="content">
+       
+      <div class="logo">Credit Card Fraud Detection</div>
+      <h1><span>Detect Fraud</span><br>In Real-Time Transactions</h1>
+      <p>Monitor credit card transactions and identify fraudulent activities using a cloud-based API-driven machine learning pipeline. Track data ingestion, model performance, and live predictions from a single dashboard.</p>
+      <a href="https://api-assignment-8ehtysjzrgw9wo9bg3upjt.streamlit.app/" class="btn">Data pipeline</a>
+      <a href="https://creditcard-ml-pipeline-model.streamlit.app/" class="btn">ML pipeline</a>
+    </div>
+
+    <!-- Right credit card design -->
+    <div class="cards">
+  <div class="card">
+    <div class="balance">$5,750.20</div>
+    <div class="card-number">5282 3456 7890 1289</div>
+    <div class="card-info">
+      <span>Valid</span>
+      <span>09/25</span>
+    </div>
+    <div class="card-info">
+      <span>Card Holder</span>
+      <span>XYZ</span>
+    </div>
+    <img class="logo-img" src="https://upload.wikimedia.org/wikipedia/commons/0/04/Mastercard-logo.png" alt="Card Logo">
+    <div class="small-card">
+      Credit Card
+    </div>
+  </div>
+</div>
+
+
+  </div>
+</body>
+</html>
